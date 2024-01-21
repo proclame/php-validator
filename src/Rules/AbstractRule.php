@@ -17,7 +17,7 @@ abstract class AbstractRule
      */
     final public function validate($value)
     {
-        if($this->nullable && $value === null){
+        if($this->nullable && ($value === null || $value === '')){
             return null;
         }
 
