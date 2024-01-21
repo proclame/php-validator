@@ -9,7 +9,7 @@ use Proclame\Validator\Exceptions\ValidationRuleException;
 class Validator
 {
 
-    private array $rules;
+    private array $rules = [];
 
     private array $validatedData = [];
     private array $erroredData = [];
